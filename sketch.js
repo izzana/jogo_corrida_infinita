@@ -55,8 +55,10 @@ function draw() {
           imageFundo.x = imageFundo.width/2;
       } 
       nave.collide(ground)
-      
-      } else if (gameState === End) {//estava escrito END
+      if(obstaculo.isTouching(mario)){
+        gameState = End;
+      }
+    } else if (gameState === End) {//estava escrito END
         gameOver.visible = true;
         restart.visible = true;
         imageFundo.velocityX = 0;

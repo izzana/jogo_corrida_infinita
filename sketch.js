@@ -63,11 +63,12 @@ function draw() {
         restart.visible = true;
         imageFundo.velocityX = 0;
         mario.velocityY = 0
-
+      /*
       if(mousePressedOver(restart)){
         console.log("reiniciar")
           reiniciar();
       }
+      */
     }
 
   
